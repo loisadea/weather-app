@@ -9,10 +9,7 @@ function ForecastSummaries({ forecasts, onForecastSelect }) {
       {forecasts.map((forecast) => (
         <ForecastSummary
           key={forecast.date}
-          date={forecast.date}
-          temperature={forecast.temperature.max}
-          description={forecast.description}
-          icon={forecast.icon}
+          forecast={forecast}
           onSelect={onForecastSelect}
         />
       ))}

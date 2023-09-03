@@ -2,10 +2,12 @@ import React from "react";
 
 import "../styles/LocationDetails.css";
 
-function LocationDetails({ city, country }) {
+function LocationDetails({ location }) {
+  if (!location) return null;
+
   return (
     <div className="LocationDetails">
-      <h1>{`${city}, ${country}`}</h1>
+      <h1>{`${location.city}, ${location.country}`}</h1>
     </div>
   );
 }

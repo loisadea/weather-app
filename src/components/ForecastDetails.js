@@ -2,8 +2,10 @@ import React from "react";
 
 import "../styles/ForecastDetails.css";
 
-function ForecastDetails({ date, temperature, wind, humidity }) {
-  const dateHuman = new Date(date).toLocaleDateString("en-UK", {
+function ForecastDetails({ forecast }) {
+  if (!forecast) return null;
+
+  const dateHuman = new Date(forecast.date).toLocaleDateString("en-UK", {
     weekday: "short",
     year: "numeric",
     month: "short",
@@ -16,21 +18,21 @@ function ForecastDetails({ date, temperature, wind, humidity }) {
         <span className="ForecastDetails__min_temperature__label">
           Min temperature:
         </span>
-        {`  ${temperature.min} °C`}
+        {`  ${forecast.temperature.min} °C`}
       </div>
       <div className="ForecastDetails__max_temperature">
         <span className="ForecastDetails__max_temperature__label">
           Max temperature:
         </span>
-        {`  ${temperature.max} °C`}
+        {`  ${forecast.temperature.max} °C`}
       </div>
       <div className="ForecastDetails__humidity">
         <span className="ForecastDetails__humidity__label">Humidity:</span>
-        {`  ${humidity}%`}
+        {`  ${forecast.humidity}%`}
       </div>
       <div className="ForecastDetails__wind">
         <span className="ForecastDetails__wind__label">Wind:</span>
-        {`  ${wind.speed}mph`}
+        {`  ${forecast.wind.speed}mph`}
       </div>
     </div>
   );

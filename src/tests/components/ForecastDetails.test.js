@@ -18,45 +18,37 @@ describe("ForecastDetails", () => {
     description: "Clear",
     icon: "800",
   };
-  const fakeForecastComponent = (
-    <ForecastDetails
-      date={fakeForecast.date}
-      temperature={fakeForecast.temperature}
-      wind={fakeForecast.wind}
-      humidity={fakeForecast.humidity}
-    />
-  );
 
   it("renders correctly", () => {
-    const { asFragment } = render(fakeForecastComponent);
+    const { asFragment } = render(<ForecastDetails forecast={fakeForecast} />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("shows the date", () => {
-    const { getByText } = render(fakeForecastComponent);
+    const { getByText } = render(<ForecastDetails forecast={fakeForecast} />);
     expect(getByText("Mon, 14 Aug 2023")).toHaveClass("ForecastDetails__date");
   });
 
   it("shows the min temperature", () => {
-    const { getByText } = render(fakeForecastComponent);
+    const { getByText } = render(<ForecastDetails forecast={fakeForecast} />);
     expect(getByText(/Min temperature:/)).toBeInTheDocument();
     expect(getByText(/4 °C/)).toBeInTheDocument();
   });
 
   it("shows the max temperature", () => {
-    const { getByText } = render(fakeForecastComponent);
+    const { getByText } = render(<ForecastDetails forecast={fakeForecast} />);
     expect(getByText(/Max temperature:/)).toBeInTheDocument();
     expect(getByText(/11 °C/)).toBeInTheDocument();
   });
 
   it("shows the humidty", () => {
-    const { getByText } = render(fakeForecastComponent);
+    const { getByText } = render(<ForecastDetails forecast={fakeForecast} />);
     expect(getByText(/Humidity:/)).toBeInTheDocument();
     expect(getByText(/30%/)).toBeInTheDocument();
   });
 
   it("shows the wind", () => {
-    const { getByText } = render(fakeForecastComponent);
+    const { getByText } = render(<ForecastDetails forecast={fakeForecast} />);
     expect(getByText(/Wind:/)).toBeInTheDocument();
     expect(getByText(/13mph/)).toBeInTheDocument();
   });
