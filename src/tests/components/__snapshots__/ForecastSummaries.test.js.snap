@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastSummaries renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="ForecastSummaries"
+  >
+    <div
+      class="ForecastSummary"
+      data-testid="ForecastSummary"
+    >
+      <div
+        class="ForecastSummary__date"
+      >
+        Wed, 16 Aug 2023
+      </div>
+      <div
+        class="ForecastSummary__icon"
+        data-testid="SummaryIcon"
+      >
+        602
+      </div>
+      <div
+        class="ForecastSummary__temperature"
+      >
+        1 °C
+      </div>
+      <div
+        class="ForecastSummary__description"
+      >
+        Heavy Snow
+      </div>
+    </div>
+    <div
+      class="ForecastSummary"
+      data-testid="ForecastSummary"
+    >
+      <div
+        class="ForecastSummary__date"
+      >
+        Thu, 17 Aug 2023
+      </div>
+      <div
+        class="ForecastSummary__icon"
+        data-testid="SummaryIcon"
+      >
+        781
+      </div>
+      <div
+        class="ForecastSummary__temperature"
+      >
+        20 °C
+      </div>
+      <div
+        class="ForecastSummary__description"
+      >
+        Tornado
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
