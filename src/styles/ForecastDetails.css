@@ -1,0 +1,26 @@
+div.ForecastDetails {
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+}
+
+div.ForecastDetails__date,
+div.ForecastDetails__min_temperature,
+div.ForecastDetails__max_temperature,
+div.ForecastDetails__humidity,
+div.ForecastDetails__wind {
+    margin: 5px;
+}
+
+
+div.ForecastDetails__date {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span.ForecastDetails__min_temperature__label,
+span.ForecastDetails__max_temperature__label,
+span.ForecastDetails__humidity__label,
+span.ForecastDetails__wind__label {
+    font-weight: bold;
+}

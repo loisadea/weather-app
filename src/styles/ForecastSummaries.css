@@ -1,0 +1,27 @@
+div.ForecastSummaries {
+    display: flex;
+}
+
+div.ForecastSummary {
+    width: 200px;
+    margin: 2px;
+    text-align: center;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+div.ForecastSummary__date {
+    font-size: 14px;
+}
+
+div.ForecastSummary__temperature {
+    font-size: 18px;
+}
+
+div.ForecastSummary__description {
+    font-size: 18px;
+}
+
+img.ForecastSummary__icon {
+    width: 90px;
+}

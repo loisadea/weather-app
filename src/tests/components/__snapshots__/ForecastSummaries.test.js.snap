@@ -14,12 +14,12 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         Wed, 16 Aug 2023
       </div>
-      <div
+      <img
+        alt="Heavy Snow"
         class="ForecastSummary__icon"
         data-testid="SummaryIcon"
-      >
-        602
-      </div>
+        src="https://openweathermap.org/img/wn/13d@4x.png"
+      />
       <div
         class="ForecastSummary__temperature"
       >
@@ -30,6 +30,12 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         Heavy Snow
       </div>
+      <button
+        class="ForecastSummary__more_details"
+        type="button"
+      >
+        More details
+      </button>
     </div>
     <div
       class="ForecastSummary"
@@ -40,12 +46,12 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         Thu, 17 Aug 2023
       </div>
-      <div
+      <img
+        alt="Tornado"
         class="ForecastSummary__icon"
         data-testid="SummaryIcon"
-      >
-        781
-      </div>
+        src="https://openweathermap.org/img/wn/50d@4x.png"
+      />
       <div
         class="ForecastSummary__temperature"
       >
@@ -56,6 +62,12 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         Tornado
       </div>
+      <button
+        class="ForecastSummary__more_details"
+        type="button"
+      >
+        More details
+      </button>
     </div>
   </div>
 </DocumentFragment>

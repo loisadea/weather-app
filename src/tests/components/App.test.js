@@ -9,7 +9,7 @@ import data from "../../data/forecast.json";
 describe("App", () => {
   test("renders App component correctly", () => {
     render(<App location={data.location} forecasts={data.forecasts} />);
-    const h1Element = screen.getByText(/Welwyn Garden city, UK/i);
+    const h1Element = screen.getByText(/Letchworth Garden city, UK/i);
     expect(h1Element).toBeInTheDocument();
   });
 });

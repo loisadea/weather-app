@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastDetails renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="ForecastDetails"
+  >
+    <div
+      class="ForecastDetails__date"
+    >
+      Mon, 14 Aug 2023
+    </div>
+    <div
+      class="ForecastDetails__min_temperature"
+    >
+      <span
+        class="ForecastDetails__min_temperature__label"
+      >
+        Min temperature:
+      </span>
+        4 °C
+    </div>
+    <div
+      class="ForecastDetails__max_temperature"
+    >
+      <span
+        class="ForecastDetails__max_temperature__label"
+      >
+        Max temperature:
+      </span>
+        11 °C
+    </div>
+    <div
+      class="ForecastDetails__humidity"
+    >
+      <span
+        class="ForecastDetails__humidity__label"
+      >
+        Humidity:
+      </span>
+        30%
+    </div>
+    <div
+      class="ForecastDetails__wind"
+    >
+      <span
+        class="ForecastDetails__wind__label"
+      >
+        Wind:
+      </span>
+        13mph
+    </div>
+  </div>
+</DocumentFragment>
+`;
