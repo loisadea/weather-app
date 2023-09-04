@@ -1,0 +1,19 @@
+div.SearchForm {
+    margin-bottom: 10px;
+}
+
+div.SearchForm input {
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0px #ccc;
+    height: 20px;
+    width: 500px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    margin-right: 10px;
+}
+
+div.SearchForm button {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}

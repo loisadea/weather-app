@@ -4,10 +4,18 @@ div.ForecastSummaries {
 
 div.ForecastSummary {
     width: 200px;
-    margin: 2px;
+    margin: 5px;
     text-align: center;
     background-color: #ccc;
     padding: 20px;
+}
+
+div.ForecastSummary:first-child {
+    margin-left: 0;
+}
+
+div.ForecastSummary:last-child {
+    margin-right: 0;
 }
 
 div.ForecastSummary__date {
